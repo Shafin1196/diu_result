@@ -135,7 +135,10 @@ class _ResultState extends State<Result> {
                 Padding
                 (
                   padding: const EdgeInsets.all(10.0),
-                  child: CircularProgressIndicator(color: Colors.black,)):
+                  child: Image.asset("assets/duck.gif",
+                  height: 40,
+                  width: 30,
+                  )):
                 Text("Get Result",
                 style: TextStyle(
                   fontSize: 20,
@@ -157,8 +160,23 @@ class ResultView extends StatelessWidget {
   final List<SemesterResult> result;
   const ResultView({super.key, required this.result});
   
+
   @override
   Widget build(BuildContext context) {
+    String image;
+    if(result[0].cgpa >= 3.5){
+      image = "assets/3.5.gif";
+    }else if(result[0].cgpa >= 3.25){
+      image = "assets/3.25.gif";
+    }else if(result[0].cgpa >= 3.0){
+      image = "assets/3.0.gif";
+    }
+   else if(result[0].cgpa >= 2.5){
+      image = "assets/2.50.gif";
+    }
+    else{
+      image = "assets/2.25.gif";
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text("DIU Result",
@@ -194,6 +212,11 @@ class ResultView extends StatelessWidget {
                   ),
                   
                 ),
+              SizedBox(height: 20,),
+              Image.asset(image,
+              height: 200,
+              width: 200,
+              ),
               SizedBox(height: 20,),
               Expanded(
                 child: ListView.builder(
