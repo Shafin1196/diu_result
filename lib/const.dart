@@ -30,7 +30,17 @@ class NewRow {
                 hintStyle: TextStyle(color: Colors.grey,
                 fontSize: 10,
                 ),
-                border: OutlineInputBorder(),
+                floatingLabelStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
               ),
             ),
           ),
@@ -46,7 +56,17 @@ class NewRow {
                 hintStyle: TextStyle(color: Colors.grey,
                 fontSize: 10,
                 ),
-                border: OutlineInputBorder(),
+                floatingLabelStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
               ),
             ),
           ),
@@ -62,7 +82,17 @@ class NewRow {
                 hintStyle: TextStyle(color: Colors.grey,
                 fontSize: 10,
                 ),
-                border: OutlineInputBorder(),
+                floatingLabelStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black, width: 3.0),
+                ),
               ),
             ),
           ),
