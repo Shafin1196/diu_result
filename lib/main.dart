@@ -322,7 +322,7 @@ class _ResultState extends State<Result> {
                 ? Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Image.asset(
-                      "assets/duck.gif",
+                      "assets/2.25.gif",
                       height: 40,
                       width: 30,
                     ))
