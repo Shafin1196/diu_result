@@ -323,8 +323,8 @@ class _ResultState extends State<Result> {
                     padding: const EdgeInsets.all(10.0),
                     child: Image.asset(
                       "assets/2.25.gif",
-                      height: 40,
-                      width: 30,
+                      height: 80,
+                      width: 70,
                     ))
                 : Text(
                     "Get Result",
