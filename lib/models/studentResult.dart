@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 class SemesterResult {
   final String semesterId;
   final String semesterName;
@@ -64,4 +63,19 @@ class SemesterResult {
 List<SemesterResult> parseResults(String responseBody) {
   final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
   return parsed.map<SemesterResult>((json) => SemesterResult.fromJson(json)).toList();
+}
+
+class SemesterID{
+  String semesterId="";
+  String makeSemesterId(String semesterName, String semesterYear){
+    if(semesterName == "spring") {
+      semesterId =  semesterYear.substring(2, 4) + "1";
+    } else if (semesterName == "summer") {
+      semesterId =  semesterYear.substring(2, 4) + "2";
+    } else if (semesterName == "fall") {
+      semesterId =  semesterYear.substring(2, 4) + "3";
+    } 
+    return semesterId;
+  }
+
 }
