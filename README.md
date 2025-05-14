@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This personal project. This app is to get semester result of Daffodil International University.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,3 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+https://github.com/user-attachments/assets/a49c794a-8b14-4034-a1c8-850a84f5d515
+
